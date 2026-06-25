@@ -30,7 +30,7 @@ export default function StudioPage() {
         return;
       }
       setOutput(data.output);
-      setMessage("Готово. Резултатът е подготвен в smart study режим.");
+      setMessage(data.aiProvider === "gemini" ? "Готово — generated with Gemini AI." : "Готово — smart study режим.");
     } catch (e) {
       setMessage("Грешка при генерацията.");
     } finally {
@@ -85,15 +85,15 @@ export default function StudioPage() {
       <main className="studio">
         <section className="panel">
           <h2>Generator Studio</h2>
-          <p>Постави тема, лекция или конспект. StudyCash ще го подреди като изпитен отговор, тест или флашкарти.</p>
+          <p>Постави тема, лекция или конспект. StudyCash я подрежда като изпитен отговор, тест или флашкарти.</p>
 
           <label>Тема / текст</label>
           <textarea value={topic} onChange={e => setTopic(e.target.value)} />
 
           <label>Тип резултат</label>
           <select value={mode} onChange={e => setMode(e.target.value)}>
-            <option value="short">Кратко за изпит</option>
-            <option value="long">Разширена тема</option>
+            <option value="short">Smart изпитен отговор</option>
+            <option value="long">Разширена разработка</option>
             <option value="quiz">Тестови въпроси</option>
             <option value="cards">Флашкарти</option>
           </select>

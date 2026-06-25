@@ -17,7 +17,8 @@ export default function HomePage() {
           <span className="badge">Smart study engine</span>
           <h1>Учи по-бързо. Отговаряй по-умно.</h1>
           <p>
-            Поставяш тема, конспект или лекция. StudyCash я превръща в структуриран изпитен отговор, тестови въпроси, флашкарти и кратка версия за устен изпит.
+            Поставяш тема, конспект или лекция. StudyCash генерира кратък отговор,
+            разширена разработка, тестови въпроси и флашкарти — на ясен български.
           </p>
           <Link className="btn" href="/studio">Пробвай безплатно</Link>
           <a className="btn secondary" href="#pricing">Виж Premium</a>
@@ -26,7 +27,7 @@ export default function HomePage() {
         <aside className="card heroCard">
           <h2>Пример</h2>
           <p>“Пулпит” → определение, етиология, патогенеза, симптоми, диагностика, лечение + тестови въпроси.</p>
-          <p className="notice">Free: 5 smart генерации. После Premium или Exam Pack.</p>
+          <p className="notice">Free: 5 генерации. После Premium или Exam Pack.</p>
         </aside>
       </main>
 
