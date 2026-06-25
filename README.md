@@ -1,24 +1,15 @@
-# StudyCash
+import Link from "next/link";
 
-StudyCash is an AI-powered study tool for students.
-
-It helps users turn exam topics, lecture notes, and study materials into:
-- structured exam summaries
-- quizzes
-- flashcards
-- clear study notes
-
-The goal is to make exam preparation faster, more organized, and easier to follow.
-
-## Features
-
-- AI study generation
-- Exam summaries
-- Quiz generation
-- Flashcards
-- Free trial generations
-- Premium study plans
-
-## Website
-
-Coming soon.
+export default function PrivacyPage() {
+  return (
+    <main className="section">
+      <div className="panel">
+        <h1>Privacy Policy</h1>
+        <p>StudyCash обработва въведения от потребителя текст, за да генерира учебен резултат.</p>
+        <p>Не въвеждай лични данни, медицински досиета, пароли или чувствителна информация.</p>
+        <p>Плащанията се обработват от Stripe. StudyCash не съхранява банкови карти.</p>
+        <Link className="btn" href="/">Назад</Link>
+      </div>
+    </main>
+  );
+}
